@@ -1,2 +1,2 @@
-# Replication_SW2018
+This note covers the model used in Shapiro and Walker (2018): Why is pollution from US manufacturing declining? The roles of environmental regulation, productivity, and trade. *American Economic Review*, 108(12), 3814-3854. I summarize the equilibrium equations that are crucial for quantification and analyze the counterfactual. Several replications and extensions are conducted to illustrate how the model explains changes in pollution emissions. I show detailed derivations and include MATLAB code to in the appendix.
 
