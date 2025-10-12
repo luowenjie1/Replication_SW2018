@@ -17,7 +17,10 @@
 %
 % Notes:
 %   - Input data "rawFile.mat" comes from replication file in SW2018
-%   - CHANGE "pollution_index" \in [1, 7] in Line 39 for different pollutants
+%   - CHANGE "pollution_index" \in [1, 7] in Line 42 for different pollutants
+%
+% For one-click replication:
+%   - Uncooment for loop in Line 44-46 and Line 352
 %======================================================================
 
 clear; 
@@ -346,7 +349,7 @@ if pollution_index == 1
     close all;
 end
 
-end
+% end
 
 %% ===================== Combine All Pollutant Plots =====================
 % change `combine_plots` to one once finishing the seven pollutants
