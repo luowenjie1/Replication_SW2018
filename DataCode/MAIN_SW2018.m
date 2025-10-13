@@ -20,7 +20,7 @@
 %   - CHANGE "pollution_index" \in [1, 7] in Line 42 for different pollutants
 %
 % For one-click replication:
-%   - Uncooment for loop in Line 44-46 and Line 352
+%   - Uncomment 'for' loop in Line 44-46 and Line 352
 %======================================================================
 
 clear; 
@@ -187,7 +187,6 @@ t_hat_shcok = t_hat_4D.^( - (parameter.alpha_4D .* parameter.theta_4D) ...
 t_hat_shcok = squeeze(t_hat_shcok);
 shocks.t_hat = reshape([ones(1, 17, 19); t_hat_shcok(2, :, :)], [N 1 17 19]);
 
-
 %% ===================== Step 1: Construct Initial Guess =====================
 % Corresponds to Appendix p.22 Step 1
 % Initial guess: current wage change (w_hat) and firm number change (M_hat)
@@ -348,6 +347,7 @@ if pollution_index == 1
     saveas(f, fullfile(figDir, 'revenue.png'));
     close all;
 end
+
 
 % end
 
